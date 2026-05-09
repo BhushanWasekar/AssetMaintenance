@@ -34589,4 +34589,428 @@ Do not change this file because it is core styling. Customizing core files will 
   --border-radius-l: 2px;
 }
 
+:root {
+  /* Brand Colors */
+  --brand-primary: #264ae5;
+  --brand-success: #16aa16;
+  --brand-warning: #cd8501;
+  --brand-danger: #EA3337;
+  --brand-default: color-mix(in srgb, var(--brand-primary) 10%, #e7e7e9);
+  --gray: #B8BABF;
+}
+
+/*
+DISCLAIMER:
+This mapping file provides defaults for sass variables to provide backwards compatibility for modules which are still using SASS variables.
+Do not change this file because it is core styling. Customizing core files will make updating Atlas much more difficult in the future.
+*/
+:root {
+  --brand-primary-50: color-mix(in srgb, var(--brand-primary), var(--color-base) 90%);
+  --brand-primary-100: color-mix(in srgb, var(--brand-primary), var(--color-base) 80%);
+  --brand-primary-200: color-mix(in srgb, var(--brand-primary), var(--color-base) 60%);
+  --brand-primary-300: color-mix(in srgb, var(--brand-primary), var(--color-base) 40%);
+  --brand-primary-400: color-mix(in srgb, var(--brand-primary), var(--color-base) 20%);
+  --brand-primary-500: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 0%);
+  --brand-primary-600: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 20%);
+  --brand-primary-700: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 40%);
+  --brand-primary-800: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 50%);
+  --brand-primary-900: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 60%);
+  --brand-success-50: color-mix(in srgb, var(--brand-success), var(--color-base) 90%);
+  --brand-success-100: color-mix(in srgb, var(--brand-success), var(--color-base) 80%);
+  --brand-success-200: color-mix(in srgb, var(--brand-success), var(--color-base) 60%);
+  --brand-success-300: color-mix(in srgb, var(--brand-success), var(--color-base) 40%);
+  --brand-success-400: color-mix(in srgb, var(--brand-success), var(--color-base) 20%);
+  --brand-success-500: color-mix(in srgb, var(--brand-success), var(--color-contrast) 0%);
+  --brand-success-600: color-mix(in srgb, var(--brand-success), var(--color-contrast) 20%);
+  --brand-success-700: color-mix(in srgb, var(--brand-success), var(--color-contrast) 40%);
+  --brand-success-800: color-mix(in srgb, var(--brand-success), var(--color-contrast) 50%);
+  --brand-success-900: color-mix(in srgb, var(--brand-success), var(--color-contrast) 60%);
+  --brand-warning-50: color-mix(in srgb, var(--brand-warning), var(--color-base) 90%);
+  --brand-warning-100: color-mix(in srgb, var(--brand-warning), var(--color-base) 80%);
+  --brand-warning-200: color-mix(in srgb, var(--brand-warning), var(--color-base) 60%);
+  --brand-warning-300: color-mix(in srgb, var(--brand-warning), var(--color-base) 40%);
+  --brand-warning-400: color-mix(in srgb, var(--brand-warning), var(--color-base) 20%);
+  --brand-warning-500: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 0%);
+  --brand-warning-600: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 20%);
+  --brand-warning-700: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 40%);
+  --brand-warning-800: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 50%);
+  --brand-warning-900: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 60%);
+  --brand-danger-50: color-mix(in srgb, var(--brand-danger), var(--color-base) 90%);
+  --brand-danger-100: color-mix(in srgb, var(--brand-danger), var(--color-base) 80%);
+  --brand-danger-200: color-mix(in srgb, var(--brand-danger), var(--color-base) 60%);
+  --brand-danger-300: color-mix(in srgb, var(--brand-danger), var(--color-base) 40%);
+  --brand-danger-400: color-mix(in srgb, var(--brand-danger), var(--color-base) 20%);
+  --brand-danger-500: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 0%);
+  --brand-danger-600: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 20%);
+  --brand-danger-700: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 40%);
+  --brand-danger-800: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 50%);
+  --brand-danger-900: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 60%);
+  --brand-default-50: color-mix(in srgb, var(--brand-default), var(--color-base) 90%);
+  --brand-default-100: color-mix(in srgb, var(--brand-default), var(--color-base) 80%);
+  --brand-default-200: color-mix(in srgb, var(--brand-default), var(--color-base) 60%);
+  --brand-default-300: color-mix(in srgb, var(--brand-default), var(--color-base) 40%);
+  --brand-default-400: color-mix(in srgb, var(--brand-default), var(--color-base) 20%);
+  --brand-default-500: color-mix(in srgb, var(--brand-default), var(--color-contrast) 0%);
+  --brand-default-600: color-mix(in srgb, var(--brand-default), var(--color-contrast) 20%);
+  --brand-default-700: color-mix(in srgb, var(--brand-default), var(--color-contrast) 40%);
+  --brand-default-800: color-mix(in srgb, var(--brand-default), var(--color-contrast) 50%);
+  --brand-default-900: color-mix(in srgb, var(--brand-default), var(--color-contrast) 60%);
+  --gray-50: color-mix(in srgb, var(--gray), var(--color-base) 90%);
+  --gray-100: color-mix(in srgb, var(--gray), var(--color-base) 80%);
+  --gray-200: color-mix(in srgb, var(--gray), var(--color-base) 60%);
+  --gray-300: color-mix(in srgb, var(--gray), var(--color-base) 40%);
+  --gray-400: color-mix(in srgb, var(--gray), var(--color-base) 20%);
+  --gray-500: color-mix(in srgb, var(--gray), var(--color-contrast) 0%);
+  --gray-600: color-mix(in srgb, var(--gray), var(--color-contrast) 20%);
+  --gray-700: color-mix(in srgb, var(--gray), var(--color-contrast) 40%);
+  --gray-800: color-mix(in srgb, var(--gray), var(--color-contrast) 50%);
+  --gray-900: color-mix(in srgb, var(--gray), var(--color-contrast) 60%);
+}
+:root .background-primary.shade-50 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-base) 90%);
+}
+:root .background-primary.shade-100 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-base) 80%);
+}
+:root .background-primary.shade-200 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-base) 60%);
+}
+:root .background-primary.shade-300 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-base) 40%);
+}
+:root .background-primary.shade-400 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-base) 20%);
+}
+:root .background-primary.shade-500 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 0%);
+}
+:root .background-primary.shade-600 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 20%);
+}
+:root .background-primary.shade-700 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 40%);
+}
+:root .background-primary.shade-800 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 50%);
+}
+:root .background-primary.shade-900 {
+  background-color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 60%);
+}
+:root .text-primary.shade-50 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-base) 90%);
+}
+:root .text-primary.shade-100 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-base) 80%);
+}
+:root .text-primary.shade-200 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-base) 60%);
+}
+:root .text-primary.shade-300 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-base) 40%);
+}
+:root .text-primary.shade-400 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-base) 20%);
+}
+:root .text-primary.shade-500 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 0%);
+}
+:root .text-primary.shade-600 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 20%);
+}
+:root .text-primary.shade-700 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 40%);
+}
+:root .text-primary.shade-800 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 50%);
+}
+:root .text-primary.shade-900 {
+  color: color-mix(in srgb, var(--brand-primary), var(--color-contrast) 60%);
+}
+:root .background-success.shade-50 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-base) 90%);
+}
+:root .background-success.shade-100 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-base) 80%);
+}
+:root .background-success.shade-200 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-base) 60%);
+}
+:root .background-success.shade-300 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-base) 40%);
+}
+:root .background-success.shade-400 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-base) 20%);
+}
+:root .background-success.shade-500 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 0%);
+}
+:root .background-success.shade-600 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 20%);
+}
+:root .background-success.shade-700 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 40%);
+}
+:root .background-success.shade-800 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 50%);
+}
+:root .background-success.shade-900 {
+  background-color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 60%);
+}
+:root .text-success.shade-50 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-base) 90%);
+}
+:root .text-success.shade-100 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-base) 80%);
+}
+:root .text-success.shade-200 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-base) 60%);
+}
+:root .text-success.shade-300 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-base) 40%);
+}
+:root .text-success.shade-400 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-base) 20%);
+}
+:root .text-success.shade-500 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 0%);
+}
+:root .text-success.shade-600 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 20%);
+}
+:root .text-success.shade-700 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 40%);
+}
+:root .text-success.shade-800 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 50%);
+}
+:root .text-success.shade-900 {
+  color: color-mix(in srgb, var(--brand-success), var(--color-contrast) 60%);
+}
+:root .background-warning.shade-50 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-base) 90%);
+}
+:root .background-warning.shade-100 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-base) 80%);
+}
+:root .background-warning.shade-200 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-base) 60%);
+}
+:root .background-warning.shade-300 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-base) 40%);
+}
+:root .background-warning.shade-400 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-base) 20%);
+}
+:root .background-warning.shade-500 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 0%);
+}
+:root .background-warning.shade-600 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 20%);
+}
+:root .background-warning.shade-700 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 40%);
+}
+:root .background-warning.shade-800 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 50%);
+}
+:root .background-warning.shade-900 {
+  background-color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 60%);
+}
+:root .text-warning.shade-50 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-base) 90%);
+}
+:root .text-warning.shade-100 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-base) 80%);
+}
+:root .text-warning.shade-200 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-base) 60%);
+}
+:root .text-warning.shade-300 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-base) 40%);
+}
+:root .text-warning.shade-400 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-base) 20%);
+}
+:root .text-warning.shade-500 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 0%);
+}
+:root .text-warning.shade-600 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 20%);
+}
+:root .text-warning.shade-700 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 40%);
+}
+:root .text-warning.shade-800 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 50%);
+}
+:root .text-warning.shade-900 {
+  color: color-mix(in srgb, var(--brand-warning), var(--color-contrast) 60%);
+}
+:root .background-danger.shade-50 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-base) 90%);
+}
+:root .background-danger.shade-100 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-base) 80%);
+}
+:root .background-danger.shade-200 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-base) 60%);
+}
+:root .background-danger.shade-300 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-base) 40%);
+}
+:root .background-danger.shade-400 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-base) 20%);
+}
+:root .background-danger.shade-500 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 0%);
+}
+:root .background-danger.shade-600 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 20%);
+}
+:root .background-danger.shade-700 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 40%);
+}
+:root .background-danger.shade-800 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 50%);
+}
+:root .background-danger.shade-900 {
+  background-color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 60%);
+}
+:root .text-danger.shade-50 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-base) 90%);
+}
+:root .text-danger.shade-100 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-base) 80%);
+}
+:root .text-danger.shade-200 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-base) 60%);
+}
+:root .text-danger.shade-300 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-base) 40%);
+}
+:root .text-danger.shade-400 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-base) 20%);
+}
+:root .text-danger.shade-500 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 0%);
+}
+:root .text-danger.shade-600 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 20%);
+}
+:root .text-danger.shade-700 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 40%);
+}
+:root .text-danger.shade-800 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 50%);
+}
+:root .text-danger.shade-900 {
+  color: color-mix(in srgb, var(--brand-danger), var(--color-contrast) 60%);
+}
+:root .background-default.shade-50 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-base) 90%);
+}
+:root .background-default.shade-100 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-base) 80%);
+}
+:root .background-default.shade-200 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-base) 60%);
+}
+:root .background-default.shade-300 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-base) 40%);
+}
+:root .background-default.shade-400 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-base) 20%);
+}
+:root .background-default.shade-500 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 0%);
+}
+:root .background-default.shade-600 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 20%);
+}
+:root .background-default.shade-700 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 40%);
+}
+:root .background-default.shade-800 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 50%);
+}
+:root .background-default.shade-900 {
+  background-color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 60%);
+}
+:root .text-default.shade-50 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-base) 90%);
+}
+:root .text-default.shade-100 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-base) 80%);
+}
+:root .text-default.shade-200 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-base) 60%);
+}
+:root .text-default.shade-300 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-base) 40%);
+}
+:root .text-default.shade-400 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-base) 20%);
+}
+:root .text-default.shade-500 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 0%);
+}
+:root .text-default.shade-600 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 20%);
+}
+:root .text-default.shade-700 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 40%);
+}
+:root .text-default.shade-800 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 50%);
+}
+:root .text-default.shade-900 {
+  color: color-mix(in srgb, var(--brand-default), var(--color-contrast) 60%);
+}
+
+/* Brand Colors */
+/* Gray Shades */
+/* Default Font Size & Color */
+/* Global Border */
+/* Topbar */
+/* Sidebar */
+/* Topbar mobile */
+/* Navbar Brand Name */
+/* Background Colors */
+/* Default Link Color */
+/* Font Family */
+/* Font Sizes */
+/* Font Weights */
+/* Header Font Sizes */
+/* Header Font Weight */
+/* Line Height */
+/* Header Margin */
+/* Font Colors */
+/* Navigation */
+/* Sidebar Navigation */
+/* Topbar Navigation */
+/* Shadows */
+/* Form Inputs */
+/* Buttons */
+/* Header */
+/* Grid */
+/* Tabs */
+/* Modal */
+/* Data View */
+/* Alerts */
+/* Wizard */
+/* Labels */
+/* Groupbox */
+/* Callouts */
+/* Timeline */
+/* Accordion */
+/* Spacing */
+/* Brand Variants */
+/* Alerts */
+/* Labels */
+/* Groupbox */
+/* Callouts */
+.popup-noclose .close {
+  display: none;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
