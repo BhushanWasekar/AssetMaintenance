@@ -12,6 +12,12 @@
       "name": "Image",
       "version": "1.5.0",
       "appStoreVersionGuid": "37cce618-06d0-4126-a768-0c398f307172"
+    },
+    {
+      "sha-256": "37d695fba9844f6d761672831ccaeb5add9559796aaf0cbbd207fbd77ce7ced7",
+      "name": "Events",
+      "version": "1.3.0",
+      "appStoreVersionGuid": "52e28f13-a3ee-4664-b237-75dcd7751872"
     }
   ]
 }
